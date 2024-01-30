@@ -377,8 +377,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1401384465721441535, guid: f36f23d9eb361b84c8e3ec3a25b28bd9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 262119365}
   m_SourcePrefab: {fileID: 100100000, guid: f36f23d9eb361b84c8e3ec3a25b28bd9, type: 3}
+--- !u!1 &262119364 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1401384465721441535, guid: f36f23d9eb361b84c8e3ec3a25b28bd9,
+    type: 3}
+  m_PrefabInstance: {fileID: 262119363}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &262119365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262119364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46dbd6092a7f25e4999433d1a15db44a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &324986469
 GameObject:
   m_ObjectHideFlags: 0
@@ -30535,10 +30557,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1656336458}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: LoadScene
-        m_Mode: 5
+      - m_Target: {fileID: 262119365}
+        m_TargetAssemblyTypeName: ExitGame, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -31243,6 +31265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smoothLocomotionScript: {fileID: 2091704709}
   playerTeleportScript: {fileID: 2091704708}
+  delayBetweenToggles: 0.5
 --- !u!114 &2091704708 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6552592445350430801, guid: 2af1d2045149fe743b81bc4d1a6f8406,

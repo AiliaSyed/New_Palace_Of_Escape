@@ -14,6 +14,7 @@ namespace BNG {
 
         public float Health = 100;
         private float _startingHealth;
+        public int targetID;
 
         [Tooltip("If specified, this GameObject will be instantiated at this transform's position on death.")]
         public GameObject SpawnOnDeath;
@@ -185,7 +186,8 @@ namespace BNG {
             }
         }
 
-        IEnumerator RespawnRoutine(float seconds) {
+        public          
+            IEnumerator RespawnRoutine(float seconds) {
 
             yield return new WaitForSeconds(seconds);
 

@@ -7,6 +7,8 @@ public class PlayerMovementSwitch : MonoBehaviour
 {
     public MonoBehaviour smoothLocomotionScript;
     public MonoBehaviour playerTeleportScript;
+    public float delayBetweenToggles = 0.5f; // Verzögerung zwischen Toggles in Sekunden
+    private float timeSinceLastToggle = 0;
 
     void Start()
     {
@@ -17,9 +19,11 @@ public class PlayerMovementSwitch : MonoBehaviour
 
     void Update()
     {
-        // Überprüfen, ob die Y-Taste gedrückt wurde
-        if (InputBridge.Instance.YButton)
+        timeSinceLastToggle += Time.deltaTime;
+        if (InputBridge.Instance.YButton && timeSinceLastToggle >= delayBetweenToggles)
         {
+            timeSinceLastToggle = 0; // Timer zurücksetzen
+
             // Wechseln zwischen den beiden Bewegungsmodi
             ToggleMovementMode();
         }

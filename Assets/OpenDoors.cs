@@ -7,6 +7,7 @@ public class OpenDoors : MonoBehaviour
     public GameObject LeftDoor;
     public GameObject RightDoor;
     public float duration = 1.0f; // Dauer der Drehung in Sekunden
+    public GameObject SouthTarget;
 
     public void StartRotationLeftDoor()
     {
@@ -21,6 +22,7 @@ public class OpenDoors : MonoBehaviour
         {
             StartCoroutine(RotateOverTime(RightDoor, Vector3.up, 90, duration));
         }
+        SouthTarget.SetActive(true);
     }
 
     private IEnumerator RotateOverTime(GameObject obj, Vector3 axis, float angle, float duration)
