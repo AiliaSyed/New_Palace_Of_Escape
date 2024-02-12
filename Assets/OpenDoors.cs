@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Media;
 using UnityEngine;
 
 public class OpenDoors : MonoBehaviour
@@ -8,6 +9,7 @@ public class OpenDoors : MonoBehaviour
     public GameObject RightDoor;
     public float duration = 1.0f; // Dauer der Drehung in Sekunden
     public GameObject SouthTarget;
+    public AudioSource DoorOpening;
 
     public void StartRotationLeftDoor()
     {
@@ -23,6 +25,7 @@ public class OpenDoors : MonoBehaviour
             StartCoroutine(RotateOverTime(RightDoor, Vector3.up, 90, duration));
         }
         SouthTarget.SetActive(true);
+        DoorOpening.Play();
     }
 
     private IEnumerator RotateOverTime(GameObject obj, Vector3 axis, float angle, float duration)

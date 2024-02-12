@@ -48,13 +48,18 @@ public class TargetManager : MonoBehaviour
         shotOrder[currentIndex] = targetID;
         currentIndex++;
 
+        Wait(1);
+        targets[targetID - 1].SetActive(false);
+
         if (currentIndex >= targets.Length)
         {
             CheckOrderAndProceed();
         }
 
-        targets[targetID-1].SetActive(false);
-
+    }
+    private IEnumerator Wait(int i)
+    {
+        yield return new WaitForSeconds(i);
     }
 
     void CheckOrderAndProceed()
@@ -64,7 +69,7 @@ public class TargetManager : MonoBehaviour
         {
             if (correctOrder[i] != shotOrder[i])
             {
-                // Falsche Reihenfolge, respawn Targets
+                Debug.Log("Falsche Reihenfolge, respawn Targets");
                 RespawnTargets();
                 return;
             }

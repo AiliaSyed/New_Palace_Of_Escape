@@ -11,12 +11,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/2 Tutorial.unity
     guid: d3c915526800ccb4bb10e270feeb854b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/3 Level Complete.unity
     guid: eedfa0f1df885cf4f918c463f6bdfe05
   - enabled: 1
-    path: Assets/Scenes/4 Level 1.unity
+    path: Assets/Scenes/3 Level 1.unity
     guid: 944aeb322250c7147b2ac9fe7cf66adf
+  - enabled: 1
+    path: Assets/Scenes/4 Level 2.unity
+    guid: 17c3c6cf238817544bfc4f114b07d826
   - enabled: 1
     path: Assets/Scenes/5 Game Complete.unity
     guid: 24b82b14bed908546adda028a4c308b9

@@ -15,7 +15,7 @@ C:/Users/Manqoolat/Desktop/Palace_Of_Escape_new/Palace_Of_Escape_new
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-57675
+57810
 Successfully changed project path to: C:/Users/Manqoolat/Desktop/Palace_Of_Escape_new/Palace_Of_Escape_new
 C:/Users/Manqoolat/Desktop/Palace_Of_Escape_new/Palace_Of_Escape_new
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/Manqoolat/Desktop/Palace_Of_Escape_new/Palace_Of_Escape_new
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [3716] Host "[IP] 192.168.1.31 [Port] 0 [Flags] 2 [Guid] 2301655851 [EditorId] 2301655851 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6BBG85C) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [12740] Host "[IP] 192.168.1.31 [Port] 0 [Flags] 2 [Guid] 1179033251 [EditorId] 1179033251 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6BBG85C) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [3716] Host "[IP] 192.168.1.31 [Port] 0 [Flags] 2 [Guid] 2301655851 [EditorId] 2301655851 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6BBG85C) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [12740] Host "[IP] 192.168.1.31 [Port] 0 [Flags] 2 [Guid] 1179033251 [EditorId] 1179033251 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6BBG85C) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 33.56 ms, found 12 plugins.
+Refreshing native plugins compatible for Editor in 32.87 ms, found 12 plugins.
 Preloading 1 native plugins for Editor in 0.65 ms.
 Initialize engine version: 2022.3.17f1 (4fc78088f837)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/Resources/UnitySubsystems
@@ -70,47 +70,47 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56472
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56192
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012612 seconds.
-- Loaded All Assemblies, in  0.580 seconds
+Registered in 0.010590 seconds.
+- Loaded All Assemblies, in  0.482 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 340 ms
+Android Extension - Scanning For ADB Devices 269 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.802 seconds
-Domain Reload Profiling: 1380ms
-	BeginReloadAssembly (175ms)
+- Finished resetting the current domain, in  0.634 seconds
+Domain Reload Profiling: 1114ms
+	BeginReloadAssembly (157ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (50ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (82ms)
-	LoadAllAssembliesAndSetupDomain (255ms)
-		LoadAssemblies (173ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (69ms)
+	LoadAllAssembliesAndSetupDomain (199ms)
+		LoadAssemblies (156ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (251ms)
-			TypeCache.Refresh (249ms)
-				TypeCache.ScanAssembly (228ms)
+		AnalyzeDomain (196ms)
+			TypeCache.Refresh (194ms)
+				TypeCache.ScanAssembly (173ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (803ms)
+	FinalizeReload (634ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (733ms)
+		SetupLoadedEditorAssemblies (571ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (506ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (396ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (154ms)
-			ProcessInitializeOnLoadMethodAttributes (65ms)
+			ProcessInitializeOnLoadAttributes (123ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,8 +118,8 @@ Domain Reload Profiling: 1380ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.013 seconds
-Refreshing native plugins compatible for Editor in 23.31 ms, found 12 plugins.
+- Loaded All Assemblies, in  0.809 seconds
+Refreshing native plugins compatible for Editor in 17.72 ms, found 12 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -151,47 +151,47 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.960 seconds
-Domain Reload Profiling: 1969ms
-	BeginReloadAssembly (206ms)
+- Finished resetting the current domain, in  0.796 seconds
+Domain Reload Profiling: 1601ms
+	BeginReloadAssembly (166ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (52ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (41ms)
-	LoadAllAssembliesAndSetupDomain (695ms)
-		LoadAssemblies (471ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (558ms)
+		LoadAssemblies (376ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (344ms)
-			TypeCache.Refresh (302ms)
-				TypeCache.ScanAssembly (276ms)
-			ScanForSourceGeneratedMonoScriptInfo (30ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (961ms)
+		AnalyzeDomain (282ms)
+			TypeCache.Refresh (249ms)
+				TypeCache.ScanAssembly (226ms)
+			ScanForSourceGeneratedMonoScriptInfo (24ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (797ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (717ms)
+		SetupLoadedEditorAssemblies (616ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (33ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (36ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (100ms)
-			ProcessInitializeOnLoadAttributes (491ms)
-			ProcessInitializeOnLoadMethodAttributes (76ms)
-			AfterProcessingInitializeOnLoad (12ms)
+			BeforeProcessingInitializeOnLoad (90ms)
+			ProcessInitializeOnLoadAttributes (412ms)
+			ProcessInitializeOnLoadMethodAttributes (64ms)
+			AfterProcessingInitializeOnLoad (9ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 22.70 ms, found 12 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 4184 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 88 unused Assets / (1.8 MB). Loaded Objects now: 4663.
-Memory consumption went from 181.5 MB to 179.7 MB.
-Total: 4.299200 ms (FindLiveObjects: 0.380100 ms CreateObjectMapping: 0.409300 ms MarkObjects: 3.091200 ms  DeleteObjects: 0.417600 ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 19.76 ms, found 12 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 4188 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 88 unused Assets / (1.8 MB). Loaded Objects now: 4667.
+Memory consumption went from 181.6 MB to 179.8 MB.
+Total: 3.975500 ms (FindLiveObjects: 0.327700 ms CreateObjectMapping: 0.217700 ms MarkObjects: 3.040500 ms  DeleteObjects: 0.388700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -206,6 +206,134 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 667557.741581 seconds.
+  path: Assets/POLYGON city pack/Prefabs/traffic signs/stop sign.prefab
+  artifactKey: Guid(6f68dfcded674364f8b137702c42898e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Prefabs/traffic signs/stop sign.prefab using Guid(6f68dfcded674364f8b137702c42898e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfcc855a4ac8b04d36160b9b19f682cb') in 0.099948 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 2.280274 seconds.
+  path: Assets/POLYGON city pack/Prefabs/Props/Bank_sign Prefab.prefab
+  artifactKey: Guid(d11c03cec4369ea4aa3d29744046d625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Prefabs/Props/Bank_sign Prefab.prefab using Guid(d11c03cec4369ea4aa3d29744046d625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1525da3a5137a33379282b0824457a49') in 0.012218 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/POLYGON city pack/Prefabs/Props/Bus stop pole prefabe.prefab
+  artifactKey: Guid(937333d453eaea246af48ac0fc62b5e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Prefabs/Props/Bus stop pole prefabe.prefab using Guid(937333d453eaea246af48ac0fc62b5e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19738549a3c6e216c45c927b94862e9f') in 0.016238 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/POLYGON city pack/Prefabs/Props/BurgerSho_Sign prefab.prefab
+  artifactKey: Guid(331204bcfe96d5f4d83f7bdf75ea0873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Prefabs/Props/BurgerSho_Sign prefab.prefab using Guid(331204bcfe96d5f4d83f7bdf75ea0873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b889c3c0afb63f4d38a567b971118a9f') in 0.013756 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/POLYGON city pack/Prefabs/Props/Bench 2 prefab.prefab
+  artifactKey: Guid(c954a7e383194f246b3502f6c815acb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Prefabs/Props/Bench 2 prefab.prefab using Guid(c954a7e383194f246b3502f6c815acb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eccbbaff15746bf3d7dcc7081c7c3023') in 0.012586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/POLYGON city pack/Prefabs/Props/ColaMachine prefab.prefab
+  artifactKey: Guid(2bf7da734f1a8224fb14055902b5b343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Prefabs/Props/ColaMachine prefab.prefab using Guid(2bf7da734f1a8224fb14055902b5b343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87d5b3a78221a722aad17348e76d098e') in 0.015534 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/POLYGON city pack/Prefabs/Props/Bin prefab.prefab
+  artifactKey: Guid(dd28fe4d5eb7bcb479b5338f128cdf70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Prefabs/Props/Bin prefab.prefab using Guid(dd28fe4d5eb7bcb479b5338f128cdf70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7d5b87537b86cbfd6feb6d07d125d01') in 0.013395 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/POLYGON city pack/Prefabs/Props/Can_lemon prefab.prefab
+  artifactKey: Guid(af9d0903bfdf9c749ac85725af5631ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Prefabs/Props/Can_lemon prefab.prefab using Guid(af9d0903bfdf9c749ac85725af5631ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7462c4408b40df00d4861dd64ffd634c') in 0.017116 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/POLYGON city pack/Prefabs/Props/Can_cola 1 prefab.prefab
+  artifactKey: Guid(81d26dcff31f3ee45a7af58439d44b2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Prefabs/Props/Can_cola 1 prefab.prefab using Guid(81d26dcff31f3ee45a7af58439d44b2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f2bb2a54af0497d41d1906b58991a62') in 0.019840 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/POLYGON city pack/Prefabs/Props/Can_cola 2 prefab.prefab
+  artifactKey: Guid(95ad7e2cecb192d43a4a02f1b422beed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Prefabs/Props/Can_cola 2 prefab.prefab using Guid(95ad7e2cecb192d43a4a02f1b422beed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2836bd09fb6611e2274aadaa1b5b2a0a') in 0.012076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/POLYGON city pack/Prefabs/Props/fence c prefab.prefab
+  artifactKey: Guid(6c59ef0028580ac429571adf93ff0a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Prefabs/Props/fence c prefab.prefab using Guid(6c59ef0028580ac429571adf93ff0a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d861c9af05e931645c7e96c37a4830b') in 0.016910 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/POLYGON city pack/Prefabs/Props/Big_trash_bin prefab.prefab
+  artifactKey: Guid(331560f2206dc024cb084301a19c05ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Prefabs/Props/Big_trash_bin prefab.prefab using Guid(331560f2206dc024cb084301a19c05ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d9e33b2f95d3964db22310b15863320') in 0.018831 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 1.795574 seconds.
+  path: Assets/POLYGON city pack/Prefabs/Props/platt sign 4 prefab.prefab
+  artifactKey: Guid(8375612b26134aa47966b68d5e0b25bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Prefabs/Props/platt sign 4 prefab.prefab using Guid(8375612b26134aa47966b68d5e0b25bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f15faabcfb70fe3b830989079ae6063') in 0.016247 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.568291 seconds.
+  path: Assets/POLYGON city pack/Prefabs/Props/StreetSellerStand prefab.prefab
+  artifactKey: Guid(110af0d3eee946d4d9ee0ca4e522611a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Prefabs/Props/StreetSellerStand prefab.prefab using Guid(110af0d3eee946d4d9ee0ca4e522611a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '568729c5cf3cb3cfd10c08bd7cf4523b') in 0.028863 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 311
+========================================================================
+Received Import Request.
+  Time since last request: 0.394148 seconds.
+  path: Assets/POLYGON city pack/Prefabs/Props/trashBag prefab.prefab
+  artifactKey: Guid(b0bb4b9691721cf4791e1124d867edd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Prefabs/Props/trashBag prefab.prefab using Guid(b0bb4b9691721cf4791e1124d867edd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03f88e7b31b949733b21177f687526a3') in 0.011427 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/POLYGON city pack/Prefabs/Props/trashcan prefab.prefab
+  artifactKey: Guid(8983c8df5fb12ea4bb76cdf0ef2f9c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Prefabs/Props/trashcan prefab.prefab using Guid(8983c8df5fb12ea4bb76cdf0ef2f9c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8184eb64c705224191c41b8f153ce84') in 0.015667 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: Der E/A-Vorgang wurde wegen eines Threadendes oder einer Anwendungsanforderung abgebrochen.
 AssetImportWorker is now disconnected from the server
