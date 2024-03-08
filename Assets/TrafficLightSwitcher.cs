@@ -17,8 +17,6 @@ public class TrafficLightSwitcher : MonoBehaviour
 
     private IEnumerator SwitchTrafficLights()
     {
-        if (!checkRedPhase())
-        {
             Debug.Log("Ampel wird geschaltet");
             foreach (GameObject trafficLight in trafficLights)
             {
@@ -47,16 +45,7 @@ public class TrafficLightSwitcher : MonoBehaviour
                     ampelStatus.buttonpressed = true;
                     
                 }
-            }
-            // Warte 15 Sekunden
-            yield return new WaitForSeconds(15);
-            foreach (GameObject trafficLight in trafficLights)
-            {
-                AmpelStatus ampelStatus = trafficLight.GetComponent<AmpelStatus>();
-                ampelStatus.buttonpressed = false;
-            }
-                
-        }
+            }       
     }
 
     bool checkRedPhase()

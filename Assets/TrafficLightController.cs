@@ -19,13 +19,16 @@ public class TrafficLightController : MonoBehaviour
     {
         StartCoroutine(Start());
     }
+
+    public void StartRedPhase()
+    {
+        StartCoroutine(RedPhaseStarting());
+        
+    }
     private IEnumerator Start()
     {
         while (true)
         {
-            // Führe 4 Wechselzyklen durch
-            for (int i = 0; i < 5; i++)
-            {
                 foreach (GameObject light in trafficLights)
                 {
                     if (!light.GetComponent<AmpelStatus>().buttonpressed)
@@ -49,39 +52,47 @@ public class TrafficLightController : MonoBehaviour
                 }
                 // Warte 10 Sekunden zwischen den Phasen
                 yield return new WaitForSeconds(10);
-            }
-            if (!CheckButtonPressedAndSkip()) {
-
-                foreach (GameObject light in trafficLights)
-                {
-                    light.GetComponent<AmpelStatus>().redPhase = true;
-                }
-
-                Debug.Log("Rote Phase beginnt");
-                foreach (GameObject light in trafficLights)
-                {
-                    StartCoroutine(SetToRed(light));
-                    light.GetComponent<AmpelStatus>().isRed = true; // Setze isRed auf true
-                    light.GetComponent<TrafficLightSoundController>().EnableSound();
-                }
-
-                playerSequenceRecorder.StartRedPhase();
-                yield return new WaitForSeconds(60);
-
-                foreach (GameObject light in trafficLights)
-                {
-                    light.GetComponent<TrafficLightSoundController>().DisableSound();
-                }
-
-                playerSequenceRecorder.EndRedPhase();
-                foreach (GameObject light in trafficLights)
-                {
-                    light.GetComponent<AmpelStatus>().redPhase = false;
-                }
-                Debug.Log("Rote Phase endet");
-            }
-
         }
+    }
+
+    public IEnumerator RedPhaseStarting()
+    {
+        GameObject redLight;
+        GameObject yellowLight;
+        GameObject greenLight;
+        Debug.Log("Rote Phase beginnt");
+            foreach (GameObject light in trafficLights)
+            {
+                redLight = light.transform.Find("red_light").gameObject;
+                yellowLight = light.transform.Find("yellow_light").gameObject;
+                greenLight = light.transform.Find("green_light").gameObject;
+                yellowLight.SetActive(false);
+                greenLight.SetActive(false);
+                redLight.SetActive(true);
+                light.GetComponent<AmpelStatus>().isRed = true; // Setze isRed auf true
+                light.GetComponent<TrafficLightSoundController>().EnableSound();
+            }
+
+            foreach (GameObject light in trafficLights)
+            {
+                light.GetComponent<AmpelStatus>().redPhase = true;
+            }
+
+            playerSequenceRecorder.StartRedPhase();
+            yield return new WaitForSeconds(60);
+
+            foreach (GameObject light in trafficLights)
+            {
+                light.GetComponent<TrafficLightSoundController>().DisableSound();
+            }
+
+            playerSequenceRecorder.EndRedPhase();
+            foreach (GameObject light in trafficLights)
+            {
+                light.GetComponent<AmpelStatus>().redPhase = false;
+            }
+            Debug.Log("Rote Phase endet");
+        StartAgain();
     }
 
     bool CheckButtonPressedAndSkip()

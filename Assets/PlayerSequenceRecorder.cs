@@ -9,7 +9,8 @@ public class PlayerSequenceRecorder : MonoBehaviour
     public GameObject Portal;
     public GameObject Podest;
     public GameObject paper;
-    public GameObject[] houseTriggers;
+    public GameObject button;
+    public GameObject[] trafficLightButtons;
 
 
     private List<string> playerSequence = new List<string>();
@@ -29,11 +30,11 @@ public class PlayerSequenceRecorder : MonoBehaviour
         }
     }
 
-    public void RecordEntry(string houseName)
+    public void RecordEntry(string trafficLightName)
     {
         if (isRedPhase)
         {
-            playerSequence.Add(houseName);
+            playerSequence.Add(trafficLightName);
             if (playerSequence.Count == correctSequence.Length)
             {
                 CheckSequence();
@@ -49,7 +50,7 @@ public class PlayerSequenceRecorder : MonoBehaviour
             if (playerSequence[i] != correctSequence[i])
             {
                 Debug.Log("Falsche Reihenfolge");
-                foreach (GameObject trigger in houseTriggers)
+                foreach (GameObject trigger in trafficLightButtons)
                 {
                     trigger.GetComponent<HouseTrigger>().isRecorded = false;   
                 }
@@ -57,9 +58,10 @@ public class PlayerSequenceRecorder : MonoBehaviour
             }
         }
         Debug.Log("Richtige Reihenfolge, Tür öffnen oder nächste Aufgabe");
-        Portal.SetActive(true);
         Podest.SetActive(false);
         paper.SetActive(false);
+        button.SetActive(false);
+        Portal.SetActive(true);
     }
 
     public void StartRedPhase()
