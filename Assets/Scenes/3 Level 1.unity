@@ -37158,6 +37158,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Countdown Timer
       objectReference: {fileID: 0}
+    - target: {fileID: 4669699214800452099, guid: edde17c50a89a0d4ba9c022ca1cae98d,
+        type: 3}
+      propertyPath: sceneToLoad
+      value: 7 Game Over Scene
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42657,6 +42662,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Countdown Timer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669699214800452099, guid: edde17c50a89a0d4ba9c022ca1cae98d,
+        type: 3}
+      propertyPath: sceneToLoad
+      value: 7 Game Over Scene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
